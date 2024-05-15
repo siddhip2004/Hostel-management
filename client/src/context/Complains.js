@@ -11,11 +11,14 @@ const Complains = () => {
    const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_lm2qvne', 'template_kpmr2kn', form.current, 'mNdVg35iqS7y-chUY',)
+    emailjs.sendForm('service_3yll11j', 'template_5pswv6h', form.current, 'fv3eQSO6Dm2PQ0dCX',)
     .then((result) => {
       console.log(result.text);
+      console.log("Message send")
   }, (error) => {
       console.log(error.text);
+      console.log("Error")
+
   });
      e.target.reset()
   };
