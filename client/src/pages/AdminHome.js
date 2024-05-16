@@ -59,17 +59,22 @@ const AdminHome = () => {
 
   return (
     <div className="announcement-box" >
-      <h2>Make an announcement</h2>
+      <h2 className="text-2xl font-bold text-black-500 mb-4">Make an announcement</h2>
+
       <form onSubmit={handleSubmit}>
       
-        <textarea
-          required
-          rows="5" cols="80"
-          value={announcement}
-          onChange={(e) => setAnnouncement(e.target.value)}
-          className={emptyFields.includes('announcement') ? 'error' : ''}
-        ></textarea>
-        <button>Done</button>
+      <textarea
+  required
+  rows="5" cols="80"
+  value={announcement}
+  onChange={(e) => setAnnouncement(e.target.value)}
+  className={emptyFields.includes('announcement') ? 'error' : 'bg-gray-100 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'}
+  placeholder="Enter your announcement here..."
+></textarea>
+<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8">
+  Done
+</button>
+
         {error && <div className="error">{error}</div>}
       </form>
     </div>

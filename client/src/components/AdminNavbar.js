@@ -14,12 +14,12 @@ const Navbar2 = () => {
     <header>
       <div className="container">
         <Link to="/admin/ad">
-          <h1>Admin Portal</h1>
+          <h1 className="font-bold text-xl">Admin Portal</h1>
         </Link>
-        <nav>
+        <nav className="px-4 py-2 items-center mt-4 ">
           {admin && (
             <div>
-              <span>{admin.email}</span>
+              <span className="text-blue-500">{admin.email}</span>
               <button onClick={handleClick}>Log out</button>
               <Link to="/admin/mer">Merit-List</Link>
             </div>

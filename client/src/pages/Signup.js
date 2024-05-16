@@ -92,9 +92,10 @@ console.log(name);
   />
   
 
-  
-  <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-white-800 dark:border-gray-700 mt-6">
-    <h1 className="text-center">Admit Form</h1>
+  <div className="mt-20">
+  <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-white-800 dark:border-gray-700 mt-16">
+  <h1 className="text-center font-bold text-blue-500 text-2xl">Admit Form</h1>
+
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid gap-6 mb-6 mt-6 md:grid-cols-2">
         <div>
@@ -382,6 +383,7 @@ console.log(name);
         Submit
       </button>
     </form>
+  </div>
   </div>
   </div>
 </>

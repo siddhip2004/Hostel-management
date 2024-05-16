@@ -3,7 +3,7 @@ const Meritlist = () => {
 <>
 
 
-<p>Girls merit list</p>
+<p  className="text-2xl font-bold text-black-500 mb-4">Girls merit list</p>
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -100,7 +100,7 @@ const Meritlist = () => {
     </table>
   </div>
 
-  <p>Boys merit list</p>
+  <p  className="text-2xl font-bold text-black-500 mb-4">Boys merit list</p>
 
 
   <meta charSet="UTF-8" />
