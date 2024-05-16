@@ -12,7 +12,7 @@ const AllotmentList = () => {
   const [combinedGirls, setCombinedGirls] = useState([]);
   const [combinedBoys, setCombinedBoys] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/allotment", {
+    fetch("http://localhost:4000/allotment", {
       method: "GET",
       crossDomain: true,
       headers: {
@@ -34,7 +34,7 @@ const AllotmentList = () => {
         console.log(st);
          const st2=[
           ...st.filter((student) => {
-            return student.gender == "M" && student.address != "Mumbai" && student.year=="FY";
+            return student.gender === "M" && student.address !== "Mumbai";
           }),
         ];
         setSetBys(true);
@@ -42,7 +42,7 @@ const AllotmentList = () => {
         console.log(st)
         const st1=[
           ...st.filter((student) => {
-            return student.gender == "F" && student.address != "Mumbai"&& student.year=="FY";
+            return student.gender === "F" && student.address !== "Mumbai";
           }),
         ];
         console.log(st1);
