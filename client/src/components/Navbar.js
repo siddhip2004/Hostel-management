@@ -37,7 +37,7 @@ const Navbar = () => {
       <span className="text-blue-500">{user.year}</span>
       {/* <Link to="/fees">FeePayment</Link> */}
       <Link to="/allot" className="">Allotment-list</Link>
-      {user.year !== 2022 && <Link to="/home" className="">SY</Link>}
+      {user.year !== 2022 && <Link to="/home" className="">SY Rooms</Link>}
       {/* <Link to="/pass">Pass</Link> */}
       <Link to="/rules" className="">Hostel Rules</Link>
       {/* <Link to="/notification">Notification</Link> */}
